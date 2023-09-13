@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <title>DNS</title>
+
+    <script src="https://kit.fontawesome.com/a5ade2df62.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>DNS<b>BLOG</b></h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="#"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li class="menu-selected"><a href="#" class="text-menu-selected"> 
+                            <i class="fas fa-file-alt"></i>Blog</a></li>
+                        <li><a href="#"> <i class="fas fa-headset"></i> Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+
+    
+    <div class="container-cover">
+        <div class="container-info-cover">
+            <h1>DNS</h1>
+            <p>¿Qué son? ¿Cómo funcinan?.</p>
+        </div>
+    </div>
+
+    <div class="container-content">
+        <article>
+
+            <h1>¿Qué es?</h1>
+
+            <p>Un sistema de nombres de dominio (DNS) hace de puente entre los humanos y los 
+                ordenadores al vincular los nombres de dominio con sus respectivas direcciones de 
+                Protocolo de Internet (IP).</p>
+
+            <p>El sistema de nombres de dominio no ha sido siempre el valor por defecto para 
+                acceder a la información de la web. Cuando se empezó a utilizar Internet, un 
+                reducido grupo de redes individuales gestionaba sus propias convenciones de 
+                denominación. El concepto de DNS centralizado no vio la luz hasta 1983. Cuando 
+                se creó el Internet Engineering Task Force en 1986 para aplicar las normas y las 
+                mejores prácticas a esta plataforma en clara expansión, el DNS se incluía en el 
+                grupo inicial de directrices adoptadas.
+                La tecnología detrás del DNS se puede comparar con la forma en que se 
+                administran los contactos telefónicos en los teléfonos inteligentes. En lugar de tener 
+                que recordar números de teléfono individuales, los usuarios pueden almacenar y 
+                localizar números fácilmente almacenándolos en sus listas de contactos, que se 
+                pueden buscar fácilmente por nombre y apellido.
+                Es lo que hace posible que los usuarios se conecten a sitios web utilizando nombres 
+                de dominio de Internet y URL de búsqueda en lugar de direcciones de protocolo de 
+                Internet numéricas. <b>En lugar de tener que recordar una dirección IP como 
+                93.184.216.34, los usuarios pueden buscar www.ejemplo.com.</b>.</p>
+
+            <p>La tecnología de traducción detrás del DNS también ha definido completamente 
+                cómo las empresas utilizan Internet, especialmente cuando crean su identidad de 
+                marca y se presentan a sus clientes. Sin el uso de un sistema de nombres de 
+                dominio, los clientes podrían perder rápidamente la pista de los sitios web que 
+                estaban buscando. Y aunque las direcciones IP pueden cambiar de vez en cuando, 
+                los nombres de dominio son fáciles de recordar y se mantienen consistentes.</p>
+
+                <h1>¿Cómo funciona?</h1>
+
+                <p>Cuando los usuarios introducen un nombre de dominio en la barra de direcciones
+                    de su navegador web, son conducidos al sitio que desean visitar. Sin embargo,
+                    esta tarea aparentemente instantánea consta de varios pasos conocidos como DNS
+                    Lookup o de proceso resolución de DNS.</p>
+
+                <img src="img/funciondns.png" alt="">
+
+                <p>Es importante diferenciar entre el uso de un DNS público y uno privado.</p>
+                <br>
+                <ul>
+                    <li><b>DNS PÚBLICO:</b> los registros de IP generalmente los proporciona su proveedor de servicios de Internet (ISP) a su empresa. Estos registros están 
+                        disponibles para el público y cualquier persona puede acceder a ellos,
+                        independientemente del dispositivo que utilicen o la red a la que están 
+                        conectados.</li>
+                    <li><b>DNS PÚBLICO:</b>un DNS privado es diferente a uno público debido a
+                        que reside detrás de un firewall de la empresa y solo contiene registros
+                        de sitios internos. En este caso, el DNS privado está limitado en su alcance
+                        a recordar direcciones IP de los sitios y servicios internos que se utilizan
+                        y no se puede acceder fuera de la red privada.</li>
+                </ul>
+                <p>Para ilustrar mejor el funcionamiento del DNS, aquí presentamos un ejemplo de 
+                    cómo es el proceso de resolución.</p>
+                    <br>
+                    <ul>
+                        <li><p>Quieres ir al sitio web de Hostinger, así que introduces el nombre de dominio 
+                            hostinger.es en la barra de direcciones del navegador web. Lo que estás haciendo 
+                            aquí es enviar una solicitud de DNS.</p></li>
+                        <li><p>Luego, tu ordenador comprobará si ya ha almacenado un registro DNS del dominio
+                            que has enviado localmente. Un registro DNS es una dirección IP que se 
+                            corresponde con el nombre del dominio.</p></li>
+                        <li><p>En primer lugar, tu ordenador buscará en su archivo hosts y en su caché. El archivo 
+                            hosts es un archivo de texto plano que asigna nombres de host a direcciones IP en 
+                            un sistema operativo, mientras que la caché es los datos temporales almacenados 
+                            por un componente de hardware o software.</p></li>
+                        <li><p>Las direcciones IP correspondientes del servicio DNS suelen encontrarse en la 
+                            caché del navegador o en la caché del proveedor de servicios de Internet (ISP). Sin 
+                            embargo, si no se encuentra ninguna dirección IP que coincida en el archivo hosts 
+                            y en la caché, se añadirán otros pasos adicionales al proceso de resolución.</p></li>
+                    </ul>
+                <p>El DNS se ha vuelto fundamental para la funcionalidad principal de Internet, ayudando a los usuarios
+                    a navegar fácilmente por un mar de direcciones IP a través de registros de recursos. Sin estos procesos
+                    esenciales, sería prácticamente imposible admitir todas las funciones que usamos a diario en línea y limitaría 
+                    nuestras capacidades cuando se trata de configurar servicios de correo, redireccionamientos de sitios web o 
+                    reconocer direcciones web IPv4 e IPv6 complejas. Pero lo que hace que las búsquedas de DNS sean tan sorprendentes es 
+                    que, independientemente de lo complejo que sea el proceso, todas las consultas de búsqueda y redireccionamientos
+                    del servidor ocurren en solo milisegundos, sin afectar el lado del cliente.</p>
+
+                <h1>Servidores DNS y ciberseguridad</h1>
+                <p>Si bien la mayoría de los servidores DNS modernos son bastante seguros, los 
+                    sistemas más antiguos que se diseñaron hace muchos años pueden presentar sus 
+                    propios desafíos de seguridad empresarial. Aquí están un par de riesgos comunes 
+                    asociados con el uso de estos servidores DNS.</p>
+                    <br>
+                    <ul>
+                        <li><b>Secuestro de DNS:</b> También conocido como ataque de redirección, el 
+                            secuestro de DNS ocurre cuando las consultas de DNS se solucionan 
+                            incorrectamente y redirigen a los usuarios a sitios web falsos y maliciosos. 
+                            Esto se hace instalando malware en las computadoras de los usuarios que 
+                            se apoderan de los enrutadores o secuestran las comunicaciones DNS a 
+                            medida que ocurren.</li>
+                        <li><b>Envenenamiento de caché:</b> El envenenamiento de la caché de DNS ocurre 
+                            cuando un hacker obtiene el control de un servidor DNS y compromete las 
+                            entradas de la dirección IP. Estas entradas falsas luego se difunden 
+                            globalmente a los proveedores de servicios de Internet, donde se almacenan 
+                            en caché y se utilizan en búsquedas públicas de DNS.
+                            Una forma de combatir eficazmente estos riesgos es mediante el uso de 
+                            DNSSec. DNSSec utiliza un sistema de nombres de dominio seguro y asigna 
+                            firmas criptográficas a los registros DNS, lo que garantiza que los registros 
+                            no se puedan alterar de su estado original. Similar a HTTPS, DNSSec agrega 
+                            una capa adicional de seguridad para acceder a los registros DNS sin la 
+                            necesidad de un cifrado pesado que ralentiza el proceso de consulta.</li>
+                    </ul>
+                <h1>Mejores prácticas de seguridad de DNS</h1>
+                <p>Independientemente del tipo de servicios DNS que elija utilizar, existen algunas 
+                    prácticas recomendadas que puede seguir para evitar presentar una superficie de 
+                    ataque y minimizar cualquier problema de seguridad potencial:</p>
+                    <br>
+                    <ul>
+                        <li><b>Vaciado de DNS:</b> limpiar regularmente su caché de DNS eliminará todas las 
+                            entradas en su sistema local. Este proceso es útil para eliminar cualquier 
+                            registro DNS inválido o comprometido que podría dirigirlo a sitios maliciosos.</li>
+                        <li><b>nslookup:</b> nslookup es un programa y un código de comando que pueden 
+                            utilizar los administradores del servidor para averiguar la dirección IP de un 
+                            nombre de host específico. Esto permite a los usuarios protegerse contra 
+                            ataques de phishing y confirmar bajo demanda la validez de los sitios que 
+                            visitan.</li>
+                        <li><b>Prueba de fugas de DNS:</b> hay varios servicios gratuitos disponibles para 
+                            ejecutar una prueba de fugas de DNS (enlace externo a ibm.com). Cuando 
+                            usan VPN seguras o servicios de privacidad, en ocasiones, puede encontrar 
+                            que están mal configuradas y que todavía se están usando los servidores 
+                            DNS predeterminados. Esto significará que cualquier persona que supervise 
+                            el tráfico de la red podrá registrar su actividad con fines maliciosos. Realizar 
+                            una prueba de fugas de DNS garantizará que tenga un túnel VPN cerrado y 
+                            que el tráfico de su red permanezca seguro.</li>
+                    </ul>
+                    <img src="img/DNSbanner.jpg" alt="">
+        </article>
+
+        <div class="container-aside">	
+
+            <aside>
+                <img src="img/dns2blanco.png" alt="">
+                <center><h2>¿Quieres saber más?</h2></center>
+                <p>Si necesitas más información puedes acudir aquí.</p>
+                <center>
+                    <a href="https://www.ibm.com/mx-es/topics/dns"><button>Leer más</button></a>
+                    <br>
+                    <a href="https://www.hostinger.mx/tutoriales/que-es-dns"><button>Leer más</button></a>
+                    <br>
+                    <a href="https://www.oracle.com/mx/cloud/networking/dns/what-is-dns/"><button>Leer más</button></a>
+                </center>
+            </aside>
+            
+            <aside>
+                <iframe width="320" height="205" src="https://www.youtube.com/embed/sUhEqT_HSBI" frameborder="0" allowfullscreen></iframe>
+                <center><h2>¿Quieres saber más?</h2></center>
+                <p>Si necesitas alguna ayuda visual aquí tienes un video.</p>
+            </aside>
+
+        </div>
+    </div>
+
+    <div class="container-footer">	
+
+        <footer>
+            <div class="logo-footer">
+                <img src="img/Escudo_unach.png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href="https://github.com/MarbellaGonz/Proyecto2.git"><i class="fa-brands fa-github fa-beat-fade icon-redes-footer"></i></a>
+                <a href=""><i class="fa-solid fa-circle-user fa-beat icon-redes-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4>©JimenezGonzMarbella</h4>
+
+        </footer>
+
+    </div>
+
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
